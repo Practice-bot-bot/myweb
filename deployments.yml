@@ -13,9 +13,9 @@ spec:
         app: myweb
     spec:
       imagePullSecrets:
-        - name: dockerhub-secret   # REQUIRED if repo is private
+        - name: dockerhub-secret   # Required if repo is private
       containers:
         - name: myweb
-          image: jayesh776/myimage:10
+          image: jayesh776/myimage:BUILD_TAG  # <-- placeholder for Jenkins
           ports:
             - containerPort: 8080
