@@ -16,6 +16,6 @@ spec:
         - name: dockerhub-secret   # REQUIRED if repo is private
       containers:
         - name: myweb
-          image: jayesh776/myimage:BUILD_TAG
+          image: jayesh776/myimage:10
           ports:
             - containerPort: 8080
